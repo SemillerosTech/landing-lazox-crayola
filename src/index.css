@@ -1,0 +1,149 @@
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/600.css";
+@import "@fontsource/poppins/400.css";
+@import "@fontsource/poppins/600.css";
+@import "@fontsource/poppins/700.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Crayola Brand Colors */
+    --crayola-green: 154, 100%, 15.7%;
+    --crayola-yellow: 51 100% 50%;
+    --crayola-red: 0 100% 50%;
+    --crayola-blue: 217 100% 50%;
+    --crayola-orange: 30 100% 50%;
+    --crayola-purple: 280 100% 50%;
+
+    /* Mexican warmth palette */
+    --warm-cream: 40 20% 95%;
+    --warm-beige: 35 15% 85%;
+    --mexican-terracotta: 15 55% 55%;
+    --deep-brown: 25 25% 15%;
+
+    /* Design system tokens */
+    --background: var(--warm-cream);
+    --foreground: var(--deep-brown);
+
+    --card: 0 0% 100%;
+    --card-foreground: var(--deep-brown);
+
+    --popover: 0 0% 100%;
+    --popover-foreground: var(--deep-brown);
+
+    --primary: var(--crayola-blue);
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: var(--crayola-yellow);
+    --secondary-foreground: var(--deep-brown);
+
+    --muted: var(--warm-beige);
+    --muted-foreground: 25 15% 45%;
+
+    --accent: var(--crayola-orange);
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: var(--crayola-red);
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 35 20% 80%;
+    --input: 0 0% 100%;
+    --ring: var(--crayola-blue);
+
+    /* Custom gradients */
+    --gradient-crayola: linear-gradient(
+      135deg,
+      hsl(var(--crayola-yellow)),
+      hsl(var(--crayola-orange))
+    );
+    --gradient-warm: linear-gradient(
+      180deg,
+      hsl(var(--warm-cream)),
+      hsl(var(--warm-beige))
+    );
+    --gradient-hero: linear-gradient(
+      135deg,
+      hsl(var(--crayola-blue) / 0.1),
+      hsl(var(--crayola-yellow) / 0.1)
+    );
+
+    /* Shadows */
+    --shadow-warm: 0 4px 20px hsl(var(--crayola-orange) / 0.1);
+    --shadow-elegant: 0 8px 32px hsl(var(--deep-brown) / 0.1);
+
+    --radius: 1rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: var(--deep-brown);
+    --foreground: var(--warm-cream);
+
+    --card: 25 20% 10%;
+    --card-foreground: var(--warm-cream);
+
+    --popover: 25 20% 10%;
+    --popover-foreground: var(--warm-cream);
+
+    --primary: var(--crayola-yellow);
+    --primary-foreground: var(--deep-brown);
+
+    --secondary: var(--mexican-terracotta);
+    --secondary-foreground: var(--warm-cream);
+
+    --muted: 25 15% 20%;
+    --muted-foreground: 35 10% 65%;
+
+    --accent: var(--crayola-orange);
+    --accent-foreground: var(--deep-brown);
+
+    --destructive: var(--crayola-red);
+    --destructive-foreground: var(--warm-cream);
+
+    --border: 25 15% 25%;
+    --input: 25 15% 15%;
+    --ring: var(--crayola-yellow);
+
+    --sidebar-background: var(--deep-brown);
+    --sidebar-foreground: var(--warm-cream);
+    --sidebar-primary: var(--crayola-blue);
+    --sidebar-primary-foreground: var(--warm-cream);
+    --sidebar-accent: 25 15% 20%;
+    --sidebar-accent-foreground: var(--warm-cream);
+    --sidebar-border: 25 15% 25%;
+    --sidebar-ring: var(--crayola-yellow);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
