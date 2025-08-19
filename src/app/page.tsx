@@ -7,10 +7,12 @@ import Testimonials from "@/components/Testimonials";
 import PackagesSection from "@/components/PackagesSection";
 import WhyUsSection from "@/components/WhyUsSection";
 import ContactSection from "@/components/ContactSection";
+import HeaderCrayola from "@/components/HeaderCrayola";
 
 export default function Page() {
   return (
     <div className="min-h-screen">
+      <HeaderCrayola />
       <HeroSection />
       <ValueProposition />
       <LazosServices />

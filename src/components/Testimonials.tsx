@@ -18,7 +18,7 @@ const Testimonials = () => {
       name: "María González",
       children: "mamá de Alejandro (7 años)",
       location: "Col. Narvarte",
-      type: "lazos",
+      type: "Lazox",
       quote:
         "Mi hijo era muy tímido y casi no me platicaba nada de la escuela. Después del Sistema SILE ahora conversamos de todo. Rosa me enseñó a escuchar realmente a mi hijo",
       rating: 5,
@@ -30,7 +30,7 @@ const Testimonials = () => {
       location: "Col. Portales",
       type: "combined",
       quote:
-        "Compré los útiles en Didacti y me quedé sorprendida con Lazos. Ahora mi hija tiene las mejores herramientas para estudiar y también para entender sus emociones",
+        "Compré los útiles en Didacti y me quedé sorprendida con Lazox. Ahora mi hija tiene las mejores herramientas para estudiar y también para entender sus emociones",
       rating: 5,
       highlight: "Educación integral",
     },
@@ -40,7 +40,7 @@ const Testimonials = () => {
     switch (type) {
       case "didacti":
         return "border-l-4 border-l-crayola-blue";
-      case "lazos":
+      case "Lazox":
         return "border-l-4 border-l-crayola-orange";
       case "combined":
         return "border-l-4 border-l-crayola-purple";
@@ -53,7 +53,7 @@ const Testimonials = () => {
     switch (type) {
       case "didacti":
         return "text-crayola-blue border-crayola-blue";
-      case "lazos":
+      case "Lazox":
         return "text-crayola-orange border-crayola-orange";
       case "combined":
         return "text-crayola-purple border-crayola-purple";
@@ -66,10 +66,10 @@ const Testimonials = () => {
     switch (type) {
       case "didacti":
         return "Didacti";
-      case "lazos":
-        return "Lazos";
+      case "Lazox":
+        return "Lazox";
       case "combined":
-        return "Didacti + Lazos";
+        return "Didacti + Lazox";
       default:
         return "";
     }

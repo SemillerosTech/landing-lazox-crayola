@@ -91,7 +91,7 @@ const ValueProposition = () => {
             </CardContent>
           </Card>
 
-          {/* Lazos Column */}
+          {/* Lazox Column */}
           <Card className="h-full shadow-elegant hover:shadow-warm transition-all duration-300 border-l-4 border-l-crayola-orange">
             <CardHeader className="pb-4">
               <div className="flex items-center space-x-3 mb-4">
@@ -100,7 +100,7 @@ const ValueProposition = () => {
                 </div>
                 <div>
                   <CardTitle className="text-2xl font-display text-crayola-orange">
-                    LAZOS - Acompañamiento Emocional Especializado
+                    Lazox - Acompañamiento Emocional Especializado
                   </CardTitle>
                   <Badge
                     variant="outline"

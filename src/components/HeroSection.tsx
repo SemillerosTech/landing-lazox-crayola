@@ -15,9 +15,9 @@ const HeroSection = () => {
             <div className="space-y-4">
               <Badge
                 variant="secondary"
-                className="text-sm font-medium px-4 py-2 rounded-full"
+                className="text-lg font-medium px-4 py-2 rounded-full w-full lg:w-auto justify-center"
               >
-                <Star className="w-4 h-4 mr-2 text-crayola-yellow" />
+                <Star className="w-4 h-4 text-black mr-2" />
                 40 años de tradición familiar mexicana
               </Badge>
 
@@ -25,7 +25,7 @@ const HeroSection = () => {
                 Productos Crayola Originales al
                 <span className="text-primary"> Precio Más Bajo</span>
                 <br />
-                <span className="text-accent text-3xl lg:text-5xl">
+                <span className="text-crayola-orange text-3xl lg:text-5xl">
                   + Acompañamiento Emocional
                 </span>
               </h1>
@@ -80,7 +80,7 @@ const HeroSection = () => {
                 Empresas hermanas mexicanas con valores familiares profundos
               </h3>
               <p className="text-sm text-muted-foreground">
-                Didacti prepara a tu hijo académicamente • Lazos lo acompaña
+                Didacti prepara a tu hijo académicamente • Lazox lo acompaña
                 emocionalmente
               </p>
             </div>

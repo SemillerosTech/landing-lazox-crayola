@@ -4,7 +4,7 @@ import { Providers } from "./providers";
 
 export const metadata: Metadata = {
   title:
-    "Didacti + Lazos | Productos Crayola Originales + Desarrollo Emocional CDMX",
+    "Didacti + Lazox | Productos Crayola Originales + Desarrollo Emocional CDMX",
   description:
     "40 años acompañando familias mexicanas. Productos Crayola originales al mejor precio + Sistema SILE de desarrollo emocional.",
   keywords: [
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "empresas familiares mexicanas",
   ],
   openGraph: {
-    title: "Didacti + Lazos | Educación Integral Familiar Mexicana",
+    title: "Didacti + Lazox | Educación Integral Familiar Mexicana",
     description:
       "Productos Crayola originales + acompañamiento emocional especializado. 40 años cuidando familias mexicanas con valores profundos.",
     type: "website",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     site: "@lovable_dev",
     images: ["https://lovable.dev/opengraph-image-p98pqg.png"],
   },
-  authors: [{ name: "Didacti y Lazos - Empresas familiares mexicanas" }],
+  authors: [{ name: "Didacti y Lazox - Empresas familiares mexicanas" }],
 };
 
 export default function RootLayout({

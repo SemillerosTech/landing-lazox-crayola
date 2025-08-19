@@ -230,7 +230,7 @@ const PackagesSection = () => {
                 size="lg"
                 className="border-crayola-orange text-crayola-orange hover:bg-crayola-orange hover:text-white"
               >
-                Agendar Cita Lazos
+                Agendar Cita Lazox
               </Button>
             </div>
           </div>

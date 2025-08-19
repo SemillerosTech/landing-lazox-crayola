@@ -13,7 +13,7 @@ const ContactSection = () => {
             <span className="text-primary">Estamos Aquí para Tu Familia</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Didacti y Lazos están una al lado de la otra, creando un espacio
+            Didacti y Lazox están una al lado de la otra, creando un espacio
             integral donde tu familia encontrará todo lo que necesita para el
             crecimiento académico y emocional.
           </p>
@@ -42,7 +42,7 @@ const ContactSection = () => {
                   variant="outline"
                   className="text-crayola-blue border-crayola-blue"
                 >
-                  Didacti y Lazos están una al lado de la otra
+                  Didacti y Lazox están una al lado de la otra
                 </Badge>
               </CardContent>
             </Card>
@@ -73,7 +73,7 @@ const ContactSection = () => {
                   <div className="flex items-center space-x-2">
                     <Phone className="w-5 h-5 text-crayola-orange" />
                     <CardTitle className="text-lg text-crayola-orange">
-                      Lazos
+                      Lazox
                     </CardTitle>
                   </div>
                 </CardHeader>
@@ -84,7 +84,7 @@ const ContactSection = () => {
                     className="w-full border-crayola-orange text-crayola-orange hover:bg-crayola-orange hover:text-white"
                   >
                     <MessageCircle className="w-4 h-4 mr-2" />
-                    WhatsApp Lazos
+                    WhatsApp Lazox
                   </Button>
                   <p className="text-sm text-muted-foreground">
                     Desarrollo emocional
@@ -119,7 +119,7 @@ const ContactSection = () => {
                   <div className="flex justify-between items-center">
                     <span className="font-medium">Domingos:</span>
                     <span className="text-muted-foreground">
-                      Solo Lazos 10:00 AM - 2:00 PM
+                      Solo Lazox 10:00 AM - 2:00 PM
                     </span>
                   </div>
                 </div>
@@ -195,13 +195,13 @@ const ContactSection = () => {
                     className="border-crayola-orange text-crayola-orange hover:bg-crayola-orange hover:text-white"
                   >
                     <MessageCircle className="w-5 h-5 mr-2" />
-                    WhatsApp Lazos
+                    WhatsApp Lazox
                   </Button>
                 </div>
 
                 <Button variant="crayola" size="lg" className="w-full">
                   <Clock className="w-5 h-5 mr-2" />
-                  Agendar Cita con Lazos
+                  Agendar Cita con Lazox
                 </Button>
               </div>
             </div>

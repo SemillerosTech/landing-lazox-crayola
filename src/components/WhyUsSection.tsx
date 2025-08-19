@@ -81,7 +81,7 @@ const WhyUsSection = () => {
             </CardContent>
           </Card>
 
-          {/* Lazos Credentials */}
+          {/* Lazox Credentials */}
           <Card className="shadow-elegant hover:shadow-warm transition-all duration-300 border-l-4 border-l-crayola-orange">
             <CardHeader>
               <div className="flex items-center space-x-4 mb-4">
@@ -96,7 +96,7 @@ const WhyUsSection = () => {
                     🧠 EXPERTOS EN DESARROLLO INFANTIL
                   </Badge>
                   <CardTitle className="text-2xl font-display text-crayola-orange">
-                    LAZOS - Especialización y Calidez
+                    Lazox - Especialización y Calidez
                   </CardTitle>
                 </div>
               </div>
