@@ -15,7 +15,7 @@ const PackagesSection = () => {
       icon: <Package className="w-8 h-8" />,
       includes: [
         "Kit escolar completo Didacti con productos Crayola",
-        "1 mes de Sistema SILE (4 sesiones)",
+        "1 mes de Sistema SILEE (4 sesiones)",
         "Asesoría personalizada de productos",
         "Garantía de satisfacción",
       ],
@@ -32,7 +32,7 @@ const PackagesSection = () => {
       icon: <Star className="w-8 h-8" />,
       includes: [
         "Kit escolar premium Didacti",
-        "2 meses Sistema SILE (8 sesiones)",
+        "2 meses Sistema SILEE (8 sesiones)",
         "1 valoración psicológica familiar",
         "Seguimiento personalizado mensual",
       ],
@@ -49,7 +49,7 @@ const PackagesSection = () => {
       icon: <Gift className="w-8 h-8" />,
       includes: [
         "Kit escolar completo + materiales extra",
-        "3 meses Sistema SILE (12 sesiones)",
+        "3 meses Sistema SILEE (12 sesiones)",
         "Valoración + 4 sesiones terapia individual",
         "Plan de seguimiento personalizado",
       ],

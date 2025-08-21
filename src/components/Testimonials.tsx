@@ -20,7 +20,7 @@ const Testimonials = () => {
       location: "Col. Narvarte",
       type: "Lazox",
       quote:
-        "Mi hijo era muy tímido y casi no me platicaba nada de la escuela. Después del Sistema SILE ahora conversamos de todo. Rosa me enseñó a escuchar realmente a mi hijo",
+        "Mi hijo era muy tímido y casi no me platicaba nada de la escuela. Después del Sistema SILEE ahora conversamos de todo. Rosa me enseñó a escuchar realmente a mi hijo",
       rating: 5,
       highlight: "Transformación emocional",
     },

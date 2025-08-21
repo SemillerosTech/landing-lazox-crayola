@@ -52,7 +52,7 @@ const HeroSection = () => {
                   variant="outline"
                   className="text-crayola-blue border-crayola-blue"
                 >
-                  ✓ Sistema SILE de comprensión lectora especializado
+                  ✓ Sistema SILEE de comprensión lectora especializado
                 </Badge>
               </div>
               <div className="flex items-center space-x-2">

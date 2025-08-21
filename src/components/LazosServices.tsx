@@ -33,7 +33,7 @@ const LazosServices = () => {
         </div>
 
         <div className="space-y-16">
-          {/* Sistema SILE */}
+          {/* Sistema SILEE */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <div className="flex items-center space-x-3">
@@ -45,7 +45,7 @@ const LazosServices = () => {
                     ⭐ Servicio Especializado
                   </Badge>
                   <h3 className="text-3xl font-display font-bold text-foreground">
-                    Sistema SILE - Fomento a la Lectura con Propósito Profundo
+                    Sistema SILEE - Fomento a la Lectura con Propósito Profundo
                   </h3>
                 </div>
               </div>

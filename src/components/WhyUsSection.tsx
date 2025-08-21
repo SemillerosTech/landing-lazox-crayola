@@ -15,7 +15,7 @@ const WhyUsSection = () => {
   const lazosCredentials = [
     "Rosa: 28 años especialista en psicología infantil",
     "Doctora en Logoterapia certificada",
-    "Sistema SILE desarrollado para niños mexicanos",
+    "Sistema SILEE desarrollado para niños mexicanos",
     "Enfoque familiar que incluye a papás y mamás",
     "Resultados comprobados en escuelas y empresas",
   ];

@@ -116,7 +116,7 @@ const ValueProposition = () => {
                 <div className="flex items-start space-x-3">
                   <Heart className="w-5 h-5 text-crayola-red mt-1 flex-shrink-0" />
                   <p className="text-sm">
-                    Sistema SILE: comprensión lectora que forma el carácter
+                    Sistema SILEE: comprensión lectora que forma el carácter
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
