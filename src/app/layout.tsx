@@ -7,6 +7,9 @@ export const metadata: Metadata = {
     "Didacti + Lazox | Productos Crayola Originales + Desarrollo Emocional CDMX",
   description:
     "40 años acompañando familias mexicanas. Productos Crayola originales al mejor precio + Sistema SILE de desarrollo emocional.",
+  icons: {
+    icon: "/favicon.png",
+  },
   keywords: [
     "productos crayola",
     "útiles escolares",

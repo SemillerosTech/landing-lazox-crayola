@@ -20,7 +20,7 @@ const PackagesSection = () => {
         "Garantía de satisfacción",
       ],
       badge: "Más Popular",
-      message: `https://wa.me/525620757607?text=Hola, me interesa el paquete ESTUDIANTE EXITOSO`,
+      message: `https://wa.me/525610722202?text=Hola, me interesa el paquete ESTUDIANTE EXITOSO`,
     },
     {
       name: "DESARROLLO INTEGRAL",
@@ -37,7 +37,7 @@ const PackagesSection = () => {
         "Seguimiento personalizado mensual",
       ],
       badge: "Recomendado",
-      message: `https://wa.me/525620757607?text=Hola, me interesa el paquete DESARROLLO INTEGRAL`,
+      message: `https://wa.me/525610722202?text=Hola, me interesa el paquete DESARROLLO INTEGRAL`,
     },
     {
       name: "APOYO TOTAL",
@@ -54,7 +54,7 @@ const PackagesSection = () => {
         "Plan de seguimiento personalizado",
       ],
       badge: "Máximo Valor",
-      message: `https://wa.me/525620757607?text=Hola, me interesa el paquete APOYO TOTAL`,
+      message: `https://wa.me/525610722202?text=Hola, me interesa el paquete APOYO TOTAL`,
     },
   ];
 

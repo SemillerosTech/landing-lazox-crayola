@@ -230,6 +230,9 @@ const ContactSection = () => {
                     variant="default"
                     size="lg"
                     className="w-full border-crayola-orange text-white bg-crayola-orange hover:bg-crayola-yellow hover:text-white"
+                    onClick={() =>
+                      window.open("https://wa.me/525610722202", "_blank")
+                    }
                   >
                     <Image
                       src={whatsappIconWhite}
