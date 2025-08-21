@@ -20,6 +20,7 @@ const PackagesSection = () => {
         "Garantía de satisfacción",
       ],
       badge: "Más Popular",
+      message: `https://wa.me/525620757607?text=Hola, me interesa el paquete ESTUDIANTE EXITOSO`,
     },
     {
       name: "DESARROLLO INTEGRAL",
@@ -36,6 +37,7 @@ const PackagesSection = () => {
         "Seguimiento personalizado mensual",
       ],
       badge: "Recomendado",
+      message: `https://wa.me/525620757607?text=Hola, me interesa el paquete DESARROLLO INTEGRAL`,
     },
     {
       name: "APOYO TOTAL",
@@ -52,6 +54,7 @@ const PackagesSection = () => {
         "Plan de seguimiento personalizado",
       ],
       badge: "Máximo Valor",
+      message: `https://wa.me/525620757607?text=Hola, me interesa el paquete APOYO TOTAL`,
     },
   ];
 
@@ -73,7 +76,7 @@ const PackagesSection = () => {
   const getButtonVariant = (color: string) => {
     switch (color) {
       case "crayola-blue":
-        return "default";
+        return "outline";
       case "crayola-orange":
         return "crayola";
       case "crayola-purple":
@@ -203,7 +206,14 @@ const PackagesSection = () => {
                 <Button
                   variant={getButtonVariant(pkg.color)}
                   size="lg"
-                  className="w-full"
+                  className={`w-full ${
+                    pkg.color === "crayola-blue"
+                      ? "bg-crayola-blue text-white hover:bg-crayola-blue/90"
+                      : pkg.color === "crayola-orange"
+                      ? "bg-crayola-orange text-white hover:bg-crayola-orange/90"
+                      : ""
+                  }`}
+                  onClick={() => window.open(pkg.message, "_blank")}
                 >
                   Elegir Este Paquete
                 </Button>
@@ -222,13 +232,22 @@ const PackagesSection = () => {
               perfecto para las necesidades específicas de tu hijo.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="whatsapp" size="lg">
+              <Button
+                variant="whatsapp"
+                size="lg"
+                onClick={() =>
+                  window.open("https://wa.me/525620757607", "_blank")
+                }
+              >
                 Consulta WhatsApp Didacti
               </Button>
               <Button
                 variant="outline"
                 size="lg"
                 className="border-crayola-orange text-crayola-orange hover:bg-crayola-orange hover:text-white"
+                onClick={() =>
+                  window.open("https://zcal.co/ludotecalazox/60min", "_blank")
+                }
               >
                 Agendar Cita Lazox
               </Button>

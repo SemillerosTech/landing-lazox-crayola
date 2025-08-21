@@ -2,6 +2,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { MapPin, Phone, MessageCircle, Clock, Car, Users } from "lucide-react";
+import Image from "next/image";
+import whatsappIconWhite from "@/assets/whatsapp-white.svg";
 
 const ContactSection = () => {
   return (
@@ -58,8 +60,19 @@ const ContactSection = () => {
                   </div>
                 </CardHeader>
                 <CardContent className="space-y-3">
-                  <Button variant="whatsapp" size="sm" className="w-full">
-                    <MessageCircle className="w-4 h-4 mr-2" />
+                  <Button
+                    variant="whatsapp"
+                    size="sm"
+                    className="w-full"
+                    onClick={() =>
+                      window.open("https://wa.me/525620757607", "_blank")
+                    }
+                  >
+                    <Image
+                      src={whatsappIconWhite}
+                      alt="WhatsApp"
+                      className="w-5 h-5 mr-2 group-hover:animate-bounce"
+                    />
                     WhatsApp Didacti
                   </Button>
                   <p className="text-sm text-muted-foreground">
@@ -79,11 +92,15 @@ const ContactSection = () => {
                 </CardHeader>
                 <CardContent className="space-y-3">
                   <Button
-                    variant="outline"
+                    variant="default"
                     size="sm"
-                    className="w-full border-crayola-orange text-crayola-orange hover:bg-crayola-orange hover:text-white"
+                    className="w-full border-crayola-orange text-white bg-crayola-orange hover:bg-crayola-yellow hover:text-white"
                   >
-                    <MessageCircle className="w-4 h-4 mr-2" />
+                    <Image
+                      src={whatsappIconWhite}
+                      alt="WhatsApp"
+                      className="w-5 h-5 mr-2 group-hover:animate-bounce"
+                    />
                     WhatsApp Lazox
                   </Button>
                   <p className="text-sm text-muted-foreground">
@@ -179,27 +196,58 @@ const ContactSection = () => {
               </h3>
 
               <div className="grid gap-3">
-                <Button variant="hero" size="lg" className="w-full">
+                <Button
+                  variant="warm"
+                  size="lg"
+                  className="w-full"
+                  onClick={() =>
+                    window.open(
+                      "https://www.google.com/maps/place/Didacti/@19.361013,-99.1426649,17z",
+                      "_blank"
+                    )
+                  }
+                >
                   <MapPin className="w-5 h-5 mr-2" />
                   Cómo Llegar
                 </Button>
 
                 <div className="grid sm:grid-cols-2 gap-3">
-                  <Button variant="whatsapp" size="lg">
-                    <MessageCircle className="w-5 h-5 mr-2" />
+                  <Button
+                    variant="whatsapp"
+                    size="lg"
+                    onClick={() =>
+                      window.open("https://wa.me/525620757607", "_blank")
+                    }
+                  >
+                    <Image
+                      src={whatsappIconWhite}
+                      alt="WhatsApp"
+                      className="w-5 h-5 mr-2 group-hover:animate-bounce"
+                    />
                     WhatsApp Didacti
                   </Button>
                   <Button
-                    variant="outline"
+                    variant="default"
                     size="lg"
-                    className="border-crayola-orange text-crayola-orange hover:bg-crayola-orange hover:text-white"
+                    className="w-full border-crayola-orange text-white bg-crayola-orange hover:bg-crayola-yellow hover:text-white"
                   >
-                    <MessageCircle className="w-5 h-5 mr-2" />
+                    <Image
+                      src={whatsappIconWhite}
+                      alt="WhatsApp"
+                      className="w-5 h-5 mr-2 group-hover:animate-bounce"
+                    />
                     WhatsApp Lazox
                   </Button>
                 </div>
 
-                <Button variant="crayola" size="lg" className="w-full">
+                <Button
+                  variant="crayola"
+                  size="lg"
+                  className="w-full"
+                  onClick={() =>
+                    window.open("https://zcal.co/ludotecalazox/60min", "_blank")
+                  }
+                >
                   <Clock className="w-5 h-5 mr-2" />
                   Agendar Cita con Lazox
                 </Button>
@@ -220,15 +268,26 @@ const ContactSection = () => {
         </div>
 
         {/* Mapa embebido placeholder */}
-        <div className="bg-muted rounded-xl p-8 text-center shadow-elegant">
-          <MapPin className="w-12 h-12 text-crayola-blue mx-auto mb-4" />
+        <div
+          id="contacto"
+          className="bg-muted rounded-xl p-8 text-center shadow-elegant "
+        >
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.1879441598808!2d-99.1426649!3d19.361013099999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fe2d368a9ffd%3A0x695fbc5051c8cf54!2sDidacti!5e0!3m2!1ses!2smx!4v1755743256597!5m2!1ses!2smx"
+            style={{ border: "0" }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="w-full h-[450px]"
+          ></iframe>
+          {/* <MapPin className="w-12 h-12 text-crayola-blue mx-auto mb-4" />
           <h3 className="text-xl font-semibold text-foreground mb-2">
             Tlalpan 1552, Delegación Benito Juárez
           </h3>
           <p className="text-muted-foreground mb-4">México, Distrito Federal</p>
           <Button variant="outline" size="lg">
             Ver en Google Maps
-          </Button>
+          </Button> */}
         </div>
       </div>
     </section>

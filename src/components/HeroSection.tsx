@@ -1,9 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Phone, MessageCircle, Star } from "lucide-react";
+import { Star, MapPin } from "lucide-react";
 import Image from "next/image";
 import heroFamilyImage from "@/assets/hero-family-crayola.jpg";
 import crayolaProductsImage from "@/assets/crayola-products.jpg";
+import whatsappIconWhite from "@/assets/whatsapp-white.svg";
 
 const HeroSection = () => {
   return (
@@ -65,12 +66,28 @@ const HeroSection = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="xl" className="group">
-                <MessageCircle className="w-5 h-5 mr-2 group-hover:animate-bounce" />
+              <Button
+                variant="whatsapp"
+                size="xl"
+                className="group"
+                onClick={() => (window.location.hash = "#contacto")}
+              >
+                <MapPin className="w-5 h-5 mr-2 group-hover:animate-bounce" />
                 Te Invitamos a Conocernos
               </Button>
-              <Button variant="whatsapp" size="xl">
-                <Phone className="w-5 h-5 mr-2" />
+              <Button
+                variant="whatsapp"
+                size="xl"
+                className="group"
+                onClick={() =>
+                  window.open("https://wa.me/525620757607", "_blank")
+                }
+              >
+                <Image
+                  src={whatsappIconWhite}
+                  alt="WhatsApp"
+                  className="w-5 h-5 mr-2 group-hover:animate-bounce"
+                />
                 WhatsApp Didacti
               </Button>
             </div>

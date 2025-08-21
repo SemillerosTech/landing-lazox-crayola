@@ -226,7 +226,11 @@ const WhyUsSection = () => {
                 <Award className="w-5 h-5 mr-2" />
                 Conoce Nuestra Historia
               </Button>
-              <Button variant="whatsapp" size="lg">
+              <Button
+                variant="whatsapp"
+                size="lg"
+                onClick={() => (window.location.hash = "contacto")}
+              >
                 <Users className="w-5 h-5 mr-2" />
                 Visítanos Hoy Mismo
               </Button>

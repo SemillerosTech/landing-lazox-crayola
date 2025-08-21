@@ -327,8 +327,14 @@ const LazosServices = () => {
         </div>
 
         <div className="text-center mt-16">
-          <Button variant="crayola" size="xl">
-            <MessageCircle className="w-5 h-5 mr-2" />
+          <Button
+            variant="crayola"
+            size="xl"
+            onClick={() =>
+              window.open("https://zcal.co/ludotecalazox/60min", "_blank")
+            }
+          >
+            <Clock className="w-5 h-5 mr-2" />
             Agendar Cita con Lazox
           </Button>
         </div>

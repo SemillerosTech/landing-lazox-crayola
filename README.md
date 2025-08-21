@@ -1,73 +1,63 @@
-# Welcome to your Lovable project
+# Landing Lazox + Crayola
 
-## Project info
+Marketing landing built with Next.js, TypeScript, Tailwind CSS and shadcn/ui for Didacti + Lazox.
 
-**URL**: https://lovable.dev/projects/5e134029-d95b-43a6-b35c-18448ec1d673
+## Tech Stack
 
-## How can I edit this code?
+- Next.js 14
+- React 18 + TypeScript
+- Tailwind CSS (+ typography, animate)
+- shadcn/ui (Radix UI primitives)
 
-There are several ways of editing your application.
+## Getting Started
 
-**Use Lovable**
+Prerequisites: Node.js LTS and npm. Using nvm is recommended.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/5e134029-d95b-43a6-b35c-18448ec1d673) and start prompting.
+```bash
+# Install dependencies
+npm install
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start dev server
 npm run dev
+
+# Lint
+npm run lint
 ```
 
-**Edit a file directly in GitHub**
+The app runs at http://localhost:3000.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Scripts
 
-**Use GitHub Codespaces**
+- dev: Start development server
+- build: Build for production
+- start: Run production server (after build)
+- lint: Run ESLint
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Project Structure
 
-## What technologies are used for this project?
+- `src/app/` — Next.js App Router pages/layouts
+- `src/components/` — UI components (including shadcn/ui)
+- `src/assets/` — images and static assets
+- `public/` — static files served from root
 
-This project is built with:
+## Styling
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Tailwind is configured in `tailwind.config.ts`. Global styles in `src/app/globals.css`.
 
-## How can I deploy this project?
+## Deployment
 
-Simply open [Lovable](https://lovable.dev/projects/5e134029-d95b-43a6-b35c-18448ec1d673) and click on Share -> Publish.
+Any platform that supports Next.js (e.g., Vercel, Netlify, Render).
 
-## Can I connect a custom domain to my Lovable project?
+Basic flow:
+```bash
+npm run build
+npm run start
+```
 
-Yes, you can!
+## Notes
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+- Open Graph/Twitter images are local placeholders in `public/placeholder.svg`. Replace with your final assets as needed.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## License
+
+Private/internal project unless specified otherwise.

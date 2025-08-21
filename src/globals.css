@@ -9,6 +9,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Synced with src/index.css. Design system uses HSL variables. */
 @layer base {
   :root {

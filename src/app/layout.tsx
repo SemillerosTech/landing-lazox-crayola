@@ -23,14 +23,13 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://lovable.dev/opengraph-image-p98pqg.png",
+        url: "/placeholder.svg",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    site: "@lovable_dev",
-    images: ["https://lovable.dev/opengraph-image-p98pqg.png"],
+    images: ["/placeholder.svg"],
   },
   authors: [{ name: "Didacti y Lazox - Empresas familiares mexicanas" }],
 };
