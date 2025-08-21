@@ -113,10 +113,10 @@ const HeroSection = () => {
                   className="rounded-xl shadow-warm w-full object-cover aspect-square"
                 />
                 <div className="bg-white rounded-xl p-4 shadow-elegant">
-                  <p className="text-sm font-semibold text-crayola-red">
+                  <p className="text-2xl font-semibold text-crayola-red">
                     Desde $299
                   </p>
-                  <p className="text-xs text-muted-foreground">
+                  <p className="text-base text-muted-foreground">
                     Paquetes escolares completos
                   </p>
                 </div>
