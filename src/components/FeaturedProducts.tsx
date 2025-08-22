@@ -88,14 +88,14 @@ const FeaturedProducts: React.FC = () => {
               >
                 Comprar ahora!
               </button>
+
+              <p className="text-center mt-3 text-red-500 font-medium text-xs ">
+                ⚠️ Precios especiales válidos únicamente en compra de paquete
+                escolar
+              </p>
             </div>
           ))}
         </div>
-
-        <p className="text-center mt-8 text-red-500 font-medium text-2xl">
-          ⚠️ IMPORTANTE: Precios especiales válidos únicamente en compra de
-          paquete escolar
-        </p>
       </div>
     </section>
   );
