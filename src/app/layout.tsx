@@ -59,6 +59,15 @@ export default function RootLayout({
             gtag('config', 'AW-17500675756');
           `}
         </Script>
+
+        <Script id="conversion-event" strategy="afterInteractive">
+          {`
+          gtag('event', 'conversion', {
+            'send_to': 'AW-17500675756/PUS0CN2bwo0bEKy9_JhB',
+            'transaction_id': ''
+          });
+        `}
+        </Script>
       </head>
       <body>
         <Providers>{children}</Providers>
