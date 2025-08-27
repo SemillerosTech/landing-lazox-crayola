@@ -30,7 +30,7 @@ const HeroSection = () => {
               />
 
               <h1 className="text-4xl lg:text-6xl font-display font-bold text-foreground leading-tight text-center lg:text-left">
-                <span>Productos Crayola Originales al</span>{" "}
+                <span>Productos Crayola Originales al</span>
                 <br className="lg:hidden" />
                 <span className="text-primary text-5xl"> Precio Más Bajo</span>
                 <br />
@@ -79,7 +79,7 @@ const HeroSection = () => {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
-                variant="whatsapp"
+                variant="warm"
                 size="xl"
                 className="group text-xl"
                 onClick={() => (window.location.hash = "#contacto")}
@@ -88,7 +88,7 @@ const HeroSection = () => {
                 Te Invitamos a Conocernos
               </Button>
               <Button
-                variant="whatsapp"
+                variant="default"
                 size="xl"
                 className="group text-xl"
                 onClick={() =>
