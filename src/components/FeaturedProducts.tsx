@@ -10,39 +10,39 @@ import twisteables from "@/assets/products/12-plumones-twisteables-neon.jpg";
 const FeaturedProducts: React.FC = () => {
   const products: Product[] = [
     {
-      name: "Crayones Crayola x 12",
-      price: "$38.46",
-      image: crayones,
-      whatsapp:
-        "https://wa.me/525620757607?text=Hola, me gustaría comprar Crayones Crayola x 12",
-    },
-    {
-      name: "Crayones Jumbo x 12 + 4 lápices de color",
-      price: "$37.96",
-      image: crayonesJumbo,
-      whatsapp:
-        "https://wa.me/525620757607?text=Hola, me gustaría comprar Crayones Jumbo x 12 + 4 lápices de color",
-    },
-    {
       name: "Colores Borrables x 12",
-      price: "$37.96",
+      price: "$98.50",
       image: coloresBorrables,
       whatsapp:
         "https://wa.me/525620757607?text=Hola, me gustaría comprar Colores Borrables x 12",
     },
     {
+      name: "Twisteables Crayones Color Neon x 8",
+      price: "$67.00",
+      image: twisteables,
+      whatsapp:
+        "https://wa.me/525620757607?text=Hola, me gustaría comprar Twisteables Crayones Color Neon x 8",
+    },
+    {
       name: "Wonder Markers Punta Fina x 24",
-      price: "$70.67",
+      price: "$77.00",
       image: wonderMarkers,
       whatsapp:
         "https://wa.me/525620757607?text=Hola, me gustaría comprar Wonder Markers Punta Fina x 24",
     },
     {
-      name: "Twisteables Crayones Color Neon x 8",
-      price: "$70.67",
-      image: twisteables,
+      name: "Crayones Jumbo x 12 + 4 lápices de color",
+      price: "$41.50",
+      image: crayonesJumbo,
       whatsapp:
-        "https://wa.me/525620757607?text=Hola, me gustaría comprar Twisteables Crayones Color Neon x 8",
+        "https://wa.me/525620757607?text=Hola, me gustaría comprar Crayones Jumbo x 12 + 4 lápices de color",
+    },
+    {
+      name: "Crayones Crayola x 12",
+      price: "$42.00",
+      image: crayones,
+      whatsapp:
+        "https://wa.me/525620757607?text=Hola, me gustaría comprar Crayones Crayola x 12",
     },
   ];
 
