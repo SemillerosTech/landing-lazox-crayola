@@ -5,6 +5,7 @@ import Image from "next/image";
 import heroFamilyImage from "@/assets/hero-family-crayola.jpg";
 import crayolaProductsImage from "@/assets/crayola-products.jpg";
 import whatsappIconWhite from "@/assets/whatsapp-white.svg";
+import logoCrayola from "@/assets/crayola-logo.webp";
 
 const HeroSection = () => {
   return (
@@ -13,7 +14,7 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Content */}
           <div className="space-y-8">
-            <div className="space-y-4">
+            <div className="space-y-4 relative">
               <Badge
                 variant="secondary"
                 className="text-lg font-medium px-4 py-2 rounded-full w-full lg:w-auto justify-center"
@@ -22,23 +23,34 @@ const HeroSection = () => {
                 40 años de tradición familiar mexicana
               </Badge>
 
-              <h1 className="text-4xl lg:text-6xl font-display font-bold text-foreground leading-tight">
-                Productos Crayola Originales al
-                <span className="text-primary"> Precio Más Bajo</span>
+              <Image
+                src={logoCrayola}
+                alt="Logotipo marca crayola "
+                className="w-34 mx-auto lg:absolute lg:-bottom-10 lg:right-0"
+              />
+
+              <h1 className="text-4xl lg:text-6xl font-display font-bold text-foreground leading-tight text-center lg:text-left">
+                <span>Productos Crayola Originales al</span>{" "}
+                <br className="lg:hidden" />
+                <span className="text-primary text-5xl"> Precio Más Bajo</span>
                 <br />
                 <span className="text-crayola-orange text-3xl lg:text-5xl">
                   + Acompañamiento Emocional
                 </span>
+                <br />
+                <span className="text-red-500 text-5xl lg:text-5xl">
+                  Desde $299
+                </span>
               </h1>
 
-              <p className="text-xl text-muted-foreground leading-relaxed">
+              {/* <p className="text-xl text-muted-foreground leading-relaxed">
                 40 años acompañando familias mexicanas en la educación de sus
                 hijos. Ahora también cuidamos su desarrollo emocional con el
                 mismo cariño familiar.
-              </p>
+              </p> */}
             </div>
 
-            <div className="space-y-4">
+            <div className="space-y-4 flex justify-center flex-col items-center lg:items-start">
               <div className="flex items-center space-x-2">
                 <Badge
                   variant="outline"
@@ -69,16 +81,16 @@ const HeroSection = () => {
               <Button
                 variant="whatsapp"
                 size="xl"
-                className="group"
+                className="group text-xl"
                 onClick={() => (window.location.hash = "#contacto")}
               >
-                <MapPin className="w-5 h-5 mr-2 group-hover:animate-bounce" />
+                <MapPin className="w-8 h-8 group-hover:animate-bounce " />
                 Te Invitamos a Conocernos
               </Button>
               <Button
                 variant="whatsapp"
                 size="xl"
-                className="group"
+                className="group text-xl"
                 onClick={() =>
                   window.open("https://wa.me/525620757607", "_blank")
                 }
@@ -86,9 +98,9 @@ const HeroSection = () => {
                 <Image
                   src={whatsappIconWhite}
                   alt="WhatsApp"
-                  className="w-5 h-5 mr-2 group-hover:animate-bounce"
+                  className="w-7 h-7 group-hover:animate-bounce"
                 />
-                WhatsApp Didacti
+                Más información
               </Button>
             </div>
 
